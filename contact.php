@@ -1,8 +1,8 @@
 <?php 
 	if($_POST) {
 
-		$to = "youremail@gmail.com"; // Your email here
-		$subject = 'Message from my website'; // Subject message here
+		$to = "sketifyofficial@gmail.com"; // Your email here
+		$subject = 'Contacting Feedback From Source https://sketify.tk (Code:Web)'; // Subject message here
 
 	}
 
