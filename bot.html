@@ -7,8 +7,15 @@
     <form action="https://sketify.tk/bot.html" method="POST">
       <div class="g-recaptcha" data-sitekey="6LdWjXgaAAAAAAdCYn4GqPvW3IS-CtEQZIZdB-EU" data-callback="onSuccess"></div>
       <br/>
-      <input type="submit" value="Submit">
+      <input type="submit" value="Submit" onclick="onL()">
        <script>
+        function onL() {
+
+          function(response) {
+          setTimeout(function() {
+            parent.location.href = "https://www.sketchwarehelp.ga";
+          }, 800);
+        }
         var onSuccess = function(response) {
           setTimeout(function() {
             parent.location.href = "https://www.sketchwarehelp.ga";
