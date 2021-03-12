@@ -10,17 +10,19 @@
   </head>
   <body>
     <form action="https://sketify.tk/bot.html" method="POST">
-      <div id="reCAPTCHA" class="g-recaptcha" data-sitekey="6LdWjXgaAAAAAAdCYn4GqPvW3IS-CtEQZIZdB-EU" ></div>
+      <div id="reCAPTCHA" class="g-recaptcha" data-sitekey="6LdWjXgaAAAAAAdCYn4GqPvW3IS-CtEQZIZdB-EU" data-callback = "onSuccess" ></div>
       <br/>
       
       <button name="button" type="button" onclick="ok()">S</button>
        <script>
 
         function ok() {
-document.getElementById("reCAPTCHA").data-callback = "onSuccess";
 
           onSuccess();
 
+document.getElementById("reCAPTCHA").data-callback = "onSuccess";
+alert("hi")
+          
           
           function(response) {
           setTimeout(function() {
