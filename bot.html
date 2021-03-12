@@ -5,15 +5,21 @@
 
     <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
    
-    <script type="text/javascript" async="" src="./Google reCaptcha_files/recaptcha__en.js" crossorigin="anonymous" integrity="sha384-mWBXzSCvkZWpx5RaelcytW0Cd6Z4jfvD8KXGlIhtj2oslLdEw6Wr3ehrL2n1qtM/"></script><script src="./Google reCaptcha_files/api.js" async="" defer=""></script>
+    <script type="text/javascript" async="" src="./Google reCaptcha_files/recaptcha__en.js" crossorigin="anonymous" integrity="sha384-mWBXzSCvkZWpx5RaelcytW0Cd6Z4jfvD8KXGlIhtj2oslLdEw6Wr3ehrL2n1qtM/"></script>
 
   </head>
   <body>
     <form action="https://sketify.tk/bot.html" method="POST">
-      <div class="g-recaptcha" data-sitekey="6LdWjXgaAAAAAAdCYn4GqPvW3IS-CtEQZIZdB-EU" ></div>
+      <div id="reCAPTCHA" class="g-recaptcha" data-sitekey="6LdWjXgaAAAAAAdCYn4GqPvW3IS-CtEQZIZdB-EU" ></div>
       <br/>
-      <input type="submit" onclick="onSuccess" >
+      
+      <input type="submit" onclick="ok()" >
        <script>
+
+        function ok() {
+          document.getElementById("reCAPTCHA").data-callback = "onSuccess";
+        }
+
         var onSuccess = function(response) {
           setTimeout(function() {
             parent.location.href = "https://www.sketchwarehelp.ga";
