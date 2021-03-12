@@ -1,22 +1,19 @@
-
-
-
-
-
-
-
 <html>
   <head>
-    <title>Google recapcha demo - Codeforgeek</title>
-    <script src='https://www.google.com/recaptcha/api.js' async defer></script>
+    <title>reCAPTCHA demo: Simple page</title>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
   </head>
   <body>
-    <h1>Google reCAPTHA Demo</h1>
-    <form id="comment_form" action="form.php" method="post">
-    
-     
-      <input type="submit" name="submit" value="Post comment"><br><br>
-      <div class="g-recaptcha" data-sitekey="6LdWjXgaAAAAAAdCYn4GqPvW3IS-CtEQZIZdB-EU"></div>
+    <form action="https://sketify.tk/bot.html" method="POST">
+      <div class="g-recaptcha" data-sitekey="6LdWjXgaAAAAAAdCYn4GqPvW3IS-CtEQZIZdB-EUy" data-callback="onSuccess"></div>
+      <br/>
+      <input type="submit" value="Submit">
+       <script>
+        var onSuccess = function(response) {
+          setTimeout(function() {
+            parent.location.href = "https://www.sketchwarehelp.ga";
+          }, 800);
+        };</script>
     </form>
   </body>
 </html>
