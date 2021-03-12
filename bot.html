@@ -18,6 +18,11 @@
 
         function ok() {
           document.getElementById("reCAPTCHA").data-callback = "onSuccess";
+
+          function(response) {
+          setTimeout(function() {
+            parent.location.href = "https://www.sketchwarehelp.ga";
+          }, 800);
         }
 
         var onSuccess = function(response) {
