@@ -17,8 +17,11 @@
        <script>
 
         function ok() {
-          document.getElementById("reCAPTCHA").data-callback = "onSuccess";
+document.getElementById("reCAPTCHA").data-callback = "onSuccess";
 
+          onSuccess();
+
+          
           function(response) {
           setTimeout(function() {
             parent.location.href = "https://www.sketchwarehelp.ga";
