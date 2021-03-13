@@ -21,13 +21,12 @@
   <body>
       <center>
     <form action="?" method="POST">
-      <div class="g-recaptcha" data-sitekey="6LdWjXgaAAAAAAdCYn4GqPvW3IS-CtEQZIZdB-EU"></div>
+      <div class="g-recaptcha" data-sitekey="6LdWjXgaAAAAAAdCYn4GqPvW3IS-CtEQZIZdB-EU"data-callback = "onSuccess"></div>
       <br/>
-      <input type="submit" value="Submit">
     
     <script>
 
-       function(response) {
+    var onSuccess =   function(response) {
           setTimeout(function() {
             parent.location.href = "https://www.sketchwarehelp.ga";
           }, 800);
